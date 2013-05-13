@@ -41,20 +41,6 @@ BOARD_NAND_PAGE_SIZE := 4096 -s 128
 #TARGET_KERNEL_CONFIG := beni_cm_rev00_defconfig
 #TARGET_KERNEL_SOURCE := /home/dan/jb/kernel/
 
-#twrp
-DEVICE_RESOLUTION := 240x320
-TW_NO_REBOOT_BOOTLOADER := true
-TW_FLASH_FROM_STORAGE := true
-BOARD_USES_BML_OVER_MTD := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
-TWRP_EVENT_LOGGING := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/beni/kernel
-#TARGET_PREBUILT_KERNEL := device/samsung/tass/kernel2
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TARGET_RECOVERY_FSTAB := device/samsung/beni/twrp/recovery.fstab
-TW_CUSTOM_POWER_BUTTON := 107
-TW_ALWAYS_RMRF := true 
-
 # Recovery
 TARGET_RECOVERY_INITRC := device/samsung/beni/recovery/recovery.rc
 #TARGET_RECOVERY_FSTAB := device/samsung/tass/recovery/recovery.fstab
